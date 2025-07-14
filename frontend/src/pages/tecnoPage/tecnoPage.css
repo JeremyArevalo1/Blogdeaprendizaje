@@ -1,0 +1,275 @@
+/* ViewTecno.css */
+.container-tecnoView {
+    margin: 0 auto;
+    padding: 50px 100px;
+    min-height: 100vh;
+    background-color: #daded8;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.text-tecnoView {
+    color: #2c3424;
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(44, 52, 36, 0.1);
+    padding: 1rem;
+    background-color: #959581;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(44, 52, 36, 0.2);
+}
+
+.container-publications-tecnoView {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 10px 250px;
+    margin-top: 3rem;
+}
+
+.pub-card-tecnoView {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.8rem;
+    margin: 50px;
+    box-shadow: 0 5px 15px rgba(76, 88, 62, 0.2);
+    border: 2px solid #768064;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pub-card-tecnoView::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(149, 149, 129, 0.1);
+    transform: skewX(-15deg);
+    z-index: 0;
+}
+
+.pub-card-tecnoView:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(76, 88, 62, 0.3);
+    border-color: #4c583e;
+}
+
+.pub-title-tecnoView {
+    color: #2c3424;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #959581;
+}
+
+.pub-desc-tecnoView {
+    color: #4c583e;
+    line-height: 1.6;
+    margin-bottom: 1.8rem;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.pub-dates-tecnoView {
+    display: flex;
+    justify-content: space-between;
+    background-color: #768064;
+    color: #daded8;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+}
+
+.comments-section-tecnoView {
+    margin-top: 1.8rem;
+    padding-top: 1.5rem;
+    border-top: 2px dashed #959581;
+    position: relative;
+    z-index: 1;
+}
+
+.comments-title-tecnoView {
+   color: #2c3424;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    background-color: #daded8;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #4c583e;
+}
+
+.comments-list-tecnoView {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-item-tecnoView {
+    background-color: rgba(118, 128, 100, 0.1);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border-left: 3px solid #4c583e;
+}
+
+.comment-user-tecnoView {
+    color: #2c3424;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.comment-user-tecnoView::before {
+    content: '•';
+    color: #768064;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.comment-text-tecnoView {
+    color: #4c583e;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.comment-date-tecnoView {
+    color: #959581;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.no-pubs-tecnoView {
+    text-align: center;
+    color: #4c583e;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #daded8;
+    border-radius: 8px;
+    border: 1px dashed #768064;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loading-tecnoView {
+    text-align: center;
+    color: #4c583e;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+}
+
+.error-tecnoView {
+    text-align: center;
+    color: #daded8;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #768064;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #4c583e;
+}
+
+
+/* Estilos base para todos los botones */
+.btnEditarTecno,
+.btnEliminarTecno,
+.btnGuardarTecno,
+.btnCancelarTecno {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(44, 52, 36, 0.2);
+}
+
+
+.btnEditarTecno {
+  background-color: #768064;
+  color: #daded8;
+}
+
+.btnEditarTecno:hover {
+  background-color: #5a6650;
+  transform: translateY(-1px);
+}
+
+
+.btnEliminarTecno {
+  background-color: #8b4a4a;
+  color: #f0e0e0;
+}
+
+.btnEliminarTecno:hover {
+  background-color: #6e3a3a;
+  transform: translateY(-1px);
+}
+
+
+.btnGuardarTecno {
+  background-color: #4c583e;
+  color: #daded8;
+}
+
+.btnGuardarTecno:hover {
+  background-color: #3a4430;
+  transform: translateY(-1px);
+}
+
+
+.btnCancelarTecno {
+  background-color: #959581;
+  color: #2c3424;
+}
+
+.btnCancelarTecno:hover {
+  background-color: #7a7a6a;
+  transform: translateY(-1px);
+}
+
+
+.comment-item-tecnoView > div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed #959581;
+}
+
+
+.comment-item-tecnoView input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: 1px solid #959581;
+  border-radius: 4px;
+  background-color: #f8f9f7;
+  color: #2c3424;
+  font-size: 0.9rem;
+}
+
+.comment-item-tecnoView input[type="text"]:focus {
+  outline: none;
+  border-color: #768064;
+  box-shadow: 0 0 0 2px rgba(118, 128, 100, 0.2);
+}

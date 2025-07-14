@@ -1,0 +1,1 @@
+export { TallerPage } from "./TallerPage";
